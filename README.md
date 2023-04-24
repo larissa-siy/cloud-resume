@@ -18,9 +18,9 @@ Whilst it is not yet complete, it is an ongoing project and I intend to implemen
 12. Infrastructure as Code - Instead of configuring my API
 resources (the Azure Function, the
 CosmosDB) manually, I will define them in anAzure Resource Manager (ARM) template on a Consumption plan, which will save me a lot of time in the long run
-13. Source Control - Instead of constantly updating my back-end API or my front-end website through VS Code, I want them to update automatically wheneverI make a change to the code using continuous integration and deployment, or CI/CD. Therefore I have created *this* a GitHub repository for my code.
-14. CI/CD (Back end) -  I will set up GitHub Actions such that when I push an update to my ARM template or Python code, my Python tests get run. If the tests pass, the ARM application should get packaged and deployed to Azure.
-15. CI/CD (Front end) - I have created a second GitHub repository for my website code and will create GitHub Actions such that when I push new website code, the Azure Storage blob automatically gets updated.
+13. Source Control - Instead of constantly updating my back-end API or my front-end website through VS Code, I want them to update automatically wheneverI make a change to the code using continuous integration and deployment, or CI/CD. Therefore I have created *this* a GitHub repository for my (front-end) code.
+14. CI/CD (Front-end) - I have created this GitHub repository for my website code and will create GitHub Actions such that when I push new website code, the Azure Storage blob automatically gets updated.
+15. CI/CD (Back-end) - I will create a second GitHub repository for my back-end code I will set up GitHub Actions such that when I push an update to my ARM template or Python code, my Python tests get run. If the tests pass, the ARM application should get packaged and deployed to Azure.
 
 
 As of 24/04/2023 I am currently on step 6 of the process but I aim to be completed by the end of the month! 
