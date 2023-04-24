@@ -9,7 +9,7 @@ Whilst it is not yet complete, it is an ongoing project and I intend to implemen
 2. CSS - styled with CSS.
 3. Static Website - I deployed the CV online as an Azure Storage static website using the Azure Static Web App, use Azure Storage to store the files.
 5. HTTPS - Use HTTPS on the Azure Storage website URL should for security - AzureCDN to helped with this. You can view my Static Website at: https://cloudresumechallenge1.z13.web.core.windows.net/
-6. DNS - I created a point a custom DNS domain name to the Azure CDN endpoint, so my CV can be accessed at something like my-c00l-resume-website.com. You can use Azure DNS or any other DNS provider for this.
+6. DNS - I am going to create a custom DNS domain name to the Azure CDN endpoint using Azure DNS.
 7. Javascript - I am going to  include a visitor counter that displays how many people have accessed the site. I will need to write a bit of Javascript to make this happen.
 8. Database - The visitor counter will need to retrieve and update its count in a database somewhere. I will use the Table API of Azure’s CosmosDB for this. The erverless capacity mode will ensure that I keep costs low.
 9. 9. API - I will not communicate directly with CosmosDB from my Javascript code. Instead, I will need to create an API that accepts requests from my web app and communicates with the database. I am going to use Azure Functions with a HTTP trigger for this.
